@@ -6,7 +6,7 @@ describe 'drone::service' do
       :osfamily => 'RedHat',
     }}
 
-    it { should contain_service('foo') }
+    it { should contain_service('drone') }
   end
 
   describe 'drone::service class on Debian' do
@@ -14,7 +14,7 @@ describe 'drone::service' do
       :osfamily => 'Debian',
     }}
 
-    it { should contain_service('foo') }
+    it { should contain_service('drone') }
   end
 end
 

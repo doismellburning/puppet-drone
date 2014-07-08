@@ -6,7 +6,7 @@ describe 'drone::install' do
       :osfamily => 'RedHat',
     }}
 
-    it { should contain_package('foo') }
+    it { should contain_package('drone') }
   end
 
   describe 'drone::install class on Debian' do
@@ -14,6 +14,6 @@ describe 'drone::install' do
       :osfamily => 'Debian',
     }}
 
-    it { should contain_package('foo') }
+    it { should contain_package('drone') }
   end
 end
