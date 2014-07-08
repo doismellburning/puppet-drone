@@ -1,6 +1,6 @@
 # drone
 
-Puppet module for drone.
+Puppet module for drone: https://github.com/drone/drone
 
 ## Example usage
 
