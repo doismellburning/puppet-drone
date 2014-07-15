@@ -1,0 +1,13 @@
+DRONED_OPTS=""
+DRONED_OPTS="$DRONED_OPTS --datasource=<%= @datasource %>"
+DRONED_OPTS="$DRONED_OPTS --driver=<%= @driver %>"
+DRONED_OPTS="$DRONED_OPTS --gitlab.skip-cert-check=<%= @gitlab_skip_cert_check %>"
+DRONED_OPTS="$DRONED_OPTS --port=:<%= @port %>"
+<% if @sslcert %>
+DRONED_OPTS="$DRONED_OPTS --sslcert='<%= @sslcert %>'"
+<% end %>
+<% if @sslkey %>
+DRONED_OPTS="$DRONED_OPTS --sslkey='<%= @sslkey %>'"
+<% end %>
+DRONED_OPTS="$DRONED_OPTS --timeout=<%= @timeout %>"
+DRONED_OPTS="$DRONED_OPTS --workers=<%= @workers %>"

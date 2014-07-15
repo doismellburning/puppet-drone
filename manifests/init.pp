@@ -8,6 +8,14 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #
 class drone (
+  $datasource = 'drone.sqlite',
+  $driver = 'sqlite3',
+  $gitlab_skip_cert_check = false,
+  $port = 8080,
+  $sslcert = undef,
+  $sslkey = undef,
+  $timeout = '5h0m0s',
+  $workers = 4
 ) inherits drone::params {
 
   # validate parameters here
