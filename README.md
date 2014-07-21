@@ -11,4 +11,4 @@ include drone
 
 ## License
 
-See [LICENSE](LICENSE) file.
+MIT. See [LICENSE](LICENSE) file.
